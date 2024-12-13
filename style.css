@@ -1,0 +1,91 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+/* Entfernt die Pfeile in Chrome, Safari, Edge und Opera */
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Entfernt die Pfeile in Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.headline {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+h1 {
+    color: white;
+}
+
+.raven-sword {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 16px;
+    color: red;
+}
+
+.raven-sword summary {
+    cursor: pointer;
+    font-weight: bold;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.raven-sword img {
+    display: block;
+    margin: 0 auto;
+}
+
+.icons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px; /* Adjust the gap as needed */
+}
+
+.icon-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.reset-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.output-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* Adjust the gap as needed */
+}
