@@ -44,6 +44,7 @@ h1 {
 
 .raven-sword img {
     display: block;
+    height: 164px;
     margin: 0 auto;
 }
 
@@ -51,6 +52,8 @@ h1 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px; /* Adjust the gap as needed */
+    justify-items: center;
+    align-items: center;
 }
 
 .icon-item {
@@ -88,4 +91,53 @@ button {
     justify-content: center;
     align-items: center;
     gap: 10px; /* Adjust the gap as needed */
+}
+
+@media (max-width: 1140px) {
+    .output-icons {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 800px) {
+    .output-icons {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .icons {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 400px) {
+    .icons {
+        gap: 0;
+    }
+
+    .icons img {
+        height: 100px;
+    }
+
+    .icons input {
+        width: 100px;
+        margin-bottom: 8px;
+    }
+
+    .output-icons img {
+        height: 100px;
+    }
+
+    .output-icons input {
+        width: 100px;
+        margin-bottom: 8px;
+    }
+}
+
+@media (max-width: 330px) {
+    .raven-sword img {
+        height: 150px;
+    }
 }
